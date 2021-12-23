@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>YAMACAFE ヤマカフェ</title>
+
+        <!--googlefont スタイルシート-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+        <!--ファビコン-->
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <link rel="icon" href="img/favicon.svg" type="image/svg+html">
+
+        <script src="ie/css-var-polyfill.js"></script>
+        <script src="ie/ofi.min.js"></script>
+        <script>window.onload=function(){objectFitImages();}</script>
+        <style>img {font-family: "object-fit: cover";}</style>
+
+    </head>
+
+    <!-- body -------------------------------------------------------------- -->
+    <body>
+        <!-- ヘッダー -->
+        <header class="header">
+
+            <!-- logo -->
+            <div class="site">
+                <img src="img/yamacafe_w.svg" alt="ヤマカフェ">
+            </div>
+
+            <!-- ナビゲーションメニュー -->
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">こだわりメニュー</a></li>
+                    <li><a href="#">お知らせ</a></li>
+                    <li><a href="#">営業時間</a></li>
+                </ul>
+            </nav>
+
+            <!-- nav button -->
+            <button type="button" class="nav-button" onclick="navFunk();">
+                <span class="sr-only">
+                MENU
+                </span>
+            </button>
+
+        </header>
+
+        <!-- hero -->
+        <div class="hero">
+            <h1>
+                <img src="img/tkb.svg" alt="catch">
+            </h1>
+        </div>
+
+        <!-- content -->
+        <article class="menu countainer">
+            <div class="menu-inner">
+                <div class="menu-title">
+                    <h2>Food & Drink</h2>
+                    <p>こだわり素材のメニューをご紹介します。</p>
+                </div>
+
+                <section class="item cafe">
+                    <div class="text">
+                        <h3>定番カフェ</h3>
+                        <p>定番だからこそ、豆や茶葉、ミルク、キャラメルなどの素材にこだわった一杯を提供しています。</p>
+                    </div>
+                    <div class="photo">
+                        <figure class="fig1"><img src="img/coffee-g8e3d0fc8f_1920.jpg" alt="豆"></figure>
+                        <figure class="fig2"><img src="img/coffee-ge146039b4_1920.jpg" alt="エスプレッソ"></figure>
+                    </div>
+                </section>
+
+                <section class="item plate">
+                    <div class="text">
+                        <h3>季節のスペシャルプレート</h3>
+                        <p>季節のフルーツを組み合わせたスペシャルプレートは専属シェフのおすすめメニューです。</p>
+                    </div>
+                    <div class="photo">
+                        <figure class="fig1"><img src="img/pancakes-g8898ccf8a_1920.jpg" alt="プレート"></figure>
+                    </div>
+                </section>
+
+                <section class="item takeout">
+                    <div class="text">
+                        <h3>お持ち帰りメニュー</h3>
+                        <p>自宅でのんびり楽しめるメニューです。ケーキ、クリームサンド、クッキーなどをご用意しております。</p>
+                    </div>
+                    <div class="photo">
+                        <figure class="fig1"><img src="img/burger-gfda7357ec_1920.jpg" alt="バーガー"></figure>
+                        <figure class="fig2"><img src="img/croissants-gb45465389_1920.jpg" alt="サンド"></figure>
+                    </div>
+                </section>
+
+            </div>
+        </article>
+
+        <article class="news countainer">
+            <h2>What's New</h2>
+            <p>カフェからのお知らせ＆新着情報です。</p>
+
+            <dl>
+                <dt>2020年00月00日</dt>
+                <dd>お持ち帰りメニューにバレンタインパックが仲間入りしました。</dd>
+
+                <dt>2020年00月00日</dt>
+                <dd>恒例の「旧正月ご来光カフェ」を1月25日午前6時より前岳山頂で開催します。</dd>
+
+                <dt>2020年00月00日</dt>
+                <dd>年末の営業は30日の午後8時まで、年始の営業は3日の午前11時からとさせていただきます。</dd>
+
+                <dt>2020年00月00日</dt>
+                <dd>クリスマスプレートのご予約は23日までとなっております。</dd>
+
+            </dl>
+
+            <a href="#" class="more">お知らせ一覧</a>
+
+        </article>
+
+        <article class="hours countainer">
+            <h2>HOURS</h2>
+            <p>営業時間</p>
+
+            <dl>
+
+                <dt>月～金</dt>
+                <dd>7:00 am ~ 9:00 pm</dd>
+
+                <dt>土～日</dt>
+                <dd>11:00 am ~ 10:00 pm<br>
+                    (L.O. 9:30 pm)</dd>
+
+            </dl>
+        </article>
+
+        <article class="info countainer">
+            <div class="text">
+                <h2><img src="img/yamacafe_b.svg" alt="YAMACAFE"></h2>
+                <p>ヤマカフェ</p>
+                
+                <p class="address">
+                    〒123-4567<br>
+                    東京都○○区○○○○<br>
+                    0123-45-6789
+                </p>
+
+                <ul class="sns">
+                    <li><a href="#"><img src="img/Twitter-logowht.svg" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="img/f_logowht.svg" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="img/glyph-logowht.svg" alt="Instagram"></a></li>
+                </ul>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.499910873621!2d139.69026095131494!3d35.68931383703774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd4b71a37a1%3A0xf1665c37f38661e8!2z5p2x5Lqs6YO95bqB!5e0!3m2!1sja!2sjp!4v1640276107797!5m2!1sja!2sjp" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </article>
+
+        <footer class="footer">
+            COPYRIGHT © YAMACAFE
+        </footer>
+
+
+        <script>
+            function navFunk() {
+                document.querySelector('html').classList.toggle('open');
+            }
+        </script>
+
+        <script>
+            if( !document.currentScript ){
+                var ie1 = document.createElement( 'script' );
+                ie1.src = "ie/css-var-polyfill.js";
+                document.head.appendChild( ie1 );
+
+                var ie2 = document.createElement( 'script' );
+                ie2.src = 'ie/ofi.min.js';
+                document.head.appendChild( ie2 );
+
+                var ie3 = document.createElement( 'script' );
+                var ie3Text = document.createTextNode( 'window.onload=function(){objectFitImages();}' );
+                ie3.appendChild( ie3Text );
+                document.head.appendChild.appendChild( ie3 );
+
+                var ie4 = document.createElement( 'style' );
+                var ie4Text = document.createTextNode( 'img {font-family: "object-fit: cover";}' );
+                ie4.appendChild( ie4Text );
+                document.head.appendChild( ie4 );
+
+
+
+            }
+        </script>
+
+
+    </body>
+</html>
